@@ -10,6 +10,8 @@ import { Platform } from "react-native";
 import { useFonts } from "expo-font";
 import AppLoading  from "expo-app-loading";
 import Header from "./Header";
+import Footer from './Footer'
+import {navigationRef} from './RootNavigation'
 
 const Stack = createStackNavigator();
 
@@ -25,6 +27,7 @@ export default function App() {
         style={{
           paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0
         }}
+        ref={navigationRef}
       >
         <Stack.Navigator
           intialRouteName="Globomantics"
@@ -33,6 +36,7 @@ export default function App() {
         >
           <Stack.Screen name="Globomantics" component={HomePage} />
         </Stack.Navigator>
+        <Footer/>
       </NavigationContainer>
     );
   }
