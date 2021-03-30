@@ -12,14 +12,15 @@ export default function Footer() {
         <Text>Home</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.button}>
+        <Text>News Detail</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.button}>
         <Text>About</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.button}>
         <Text>Quote</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.button}>
-        <Text>XXX</Text>
-      </TouchableOpacity>
+   
     </View>
   );
 }
