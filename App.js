@@ -15,6 +15,7 @@ import NewsDetail from './NewsDetail'
 import {navigationRef} from './RootNavigation'
 import About from './About'
 import Quote from './Quote'
+import Catalog from './Catalog'
 
 const Stack = createStackNavigator();
 
@@ -40,6 +41,7 @@ export default function App() {
           <Stack.Screen name="NewsDetail" component={NewsDetail}  options={{ header: () => <Header headerDispaly="News" /> }}/>
           <Stack.Screen name="About" component={About}  options={{ header: () => <Header headerDispaly="About" /> }}/>
           <Stack.Screen name="Quote" component={Quote}  options={{ header: () => <Header headerDispaly="Quote" /> }}/>
+          <Stack.Screen name="Catalog" component={Catalog}  options={{ header: () => <Header headerDispaly="Catalog" /> }}/>
           </Stack.Navigator>
         <Footer/>
       </NavigationContainer>
