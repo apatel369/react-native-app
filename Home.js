@@ -15,7 +15,7 @@ export default function Homepage({ navigation }) {
 
   useEffect(() => {
     fetch(
-      "https://newsapi.org/v2/everything?q=tech&from=${apiKey}"
+      "https://newsapi.org/v2/everything?q=tech&apiKey=${apiKey}"
     ).then((response) => response.json())
       .then((json) => setNewsData(json.articles))
       .catch((error) => console.error(error))
