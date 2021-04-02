@@ -1,13 +1,24 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import { View, Text, StyleSheet, TextInput, ScrollView, TouchableOpacity } from 'react-native'
 
-export default function Quote() {
+export default function Quote({route}) {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
     const [message, setMessage] = useState('');
     const [error, setError] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const { model } = route.params;
+    const { modelNumber } = route.params;
+
+    useEffect(() => {
+      if(model !== 'Footer'){
+          const newQuote = `${model} model ${modelNumber}`;
+         setMessage(newQuote);
+      }else{
+          setMessage('');
+      }
+    })
 
     const postMessage = () => {
         if(!name || !email || !message){

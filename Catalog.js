@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { View, Text, StyleSheet, FlatList, Image, TouchableWithoutFeedback, ImageEditor} from 'react-native'
+import { View, Text, StyleSheet, FlatList, Image, TouchableWithoutFeedback} from 'react-native'
 import globoCatalog from './CatalogDB'
 
 export default function Catalog({navigation}) {
