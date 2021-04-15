@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   storyimage: {
-    heiht: 300,
+    height: 300,
     width: "100%",
   },
   title: {
