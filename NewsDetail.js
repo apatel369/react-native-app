@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   title: {
-    fontFamlily: "OpenSans",
+    fontFamily: "OpenSans",
     fontWeight: "bold",
     fontSize: 20,
     padding: 20,

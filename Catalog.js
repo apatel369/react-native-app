@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
         borderBottomColor: 'black',
         borderBottomWidth: 1,
         padding: 20,
-        justifyCenter: 'center'
+        justifyContent: 'center'
     },
     productimage: {
         flex: 1
